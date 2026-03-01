@@ -37,7 +37,10 @@ const Form = () => {
 
   return (
     <div className="h-full flex flex-col items-center justify-center text-black w-2/3 rounded-lg">
-      <div className="flex flex-col items-start gap-5 w-full px-20 ">
+      <form
+        className="flex flex-col items-start gap-5 w-full px-20 "
+        onClick={handleSubmit}
+      >
         <h1 className="text-4xl">Create your account</h1>
         <div className="text-sm text-[#6a6a6a] w-full flex flex-col gap-1">
           <label htmlFor="email">Email</label>
@@ -86,13 +89,10 @@ const Form = () => {
           </label>
         </div>
 
-        <button
-          className="bg-[#9c3dd7] text-white px-6 py-3 roundes-[20px] mt-5 rounded-[10px] w-full text-center"
-          onClick={handleSubmit}
-        >
+        <button className="bg-[#9c3dd7] text-white px-6 py-3 roundes-[20px] mt-5 rounded-[10px] w-full text-center">
           Type to create a password
         </button>
-      </div>
+      </form>
     </div>
   );
 };
