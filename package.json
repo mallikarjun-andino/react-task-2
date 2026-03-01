@@ -1,0 +1,35 @@
+{
+  "name": "react-task-2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepare": "husky install"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mallikarjun-andino/react-task-2.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/mallikarjun-andino/react-task-2/issues"
+  },
+  "homepage": "https://github.com/mallikarjun-andino/react-task-2#readme",
+  "devDependencies": {
+    "husky": "^8.0.0",
+    "lint-staged": "^16.3.0"
+  },
+  "lint-staged": {
+  "client/**/*.{js,jsx,ts,tsx}": [
+    "npm --prefix client run lint:fix",
+    "npm --prefix client run format"
+  ],
+  "client/**/*.{json,md}": [
+    "npm --prefix client run format"
+  ]
+}
+}
