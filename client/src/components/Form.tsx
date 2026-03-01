@@ -39,7 +39,7 @@ const Form = () => {
     <div className="h-full flex flex-col items-center justify-center text-black w-2/3 rounded-lg">
       <form
         className="flex flex-col items-start gap-5 w-full px-20 "
-        onClick={handleSubmit}
+        onSubmit={handleSubmit}
       >
         <h1 className="text-4xl">Create your account</h1>
         <div className="text-sm text-[#6a6a6a] w-full flex flex-col gap-1">
